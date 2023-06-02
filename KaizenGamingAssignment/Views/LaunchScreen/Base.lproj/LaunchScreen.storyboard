@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -16,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kaizen_gaming_logo" translatesAutoresizingMaskIntoConstraints="NO" id="g4T-lf-9h4">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kaizen_gaming_logo_with_title" translatesAutoresizingMaskIntoConstraints="NO" id="g4T-lf-9h4">
                                 <rect key="frame" x="-45" y="313.5" width="504" height="269"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="g4T-lf-9h4" secondAttribute="height" multiplier="15:8" id="8I3-ui-Z1N"/>
@@ -38,7 +39,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="kaizen_gaming_logo" width="1200" height="720"/>
+        <image name="kaizen_gaming_logo_with_title" width="1200" height="720"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
