@@ -55,7 +55,7 @@ final class MainViewController: UIViewController {
     }
     
     // MARK: - Navigation Bar Actions
-    @IBAction func porfileButtonAction(_ sender: Any) {
+    @IBAction func profileButtonAction(_ sender: Any) {
         // Profile button action should be implemented here
     }
     

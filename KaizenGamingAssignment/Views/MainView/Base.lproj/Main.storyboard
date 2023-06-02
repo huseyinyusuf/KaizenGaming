@@ -9,16 +9,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main View Controller-->
+        <!--Kaizen App-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="KaizenGamingAssignment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="H8H-i0-9Zi">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="QYM-ia-l4h"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="O9L-cJ-xLE"/>
@@ -35,21 +35,21 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="OaU-qM-t3q">
-                        <barButtonItem key="leftBarButtonItem" image="person.fill" catalog="system" style="plain" id="cTZ-GC-S57">
+                    <navigationItem key="navigationItem" title="Kaizen App" id="To3-7n-mUv">
+                        <barButtonItem key="leftBarButtonItem" image="user" id="aJ3-bt-sjr">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <action selector="porfileButtonAction:" destination="BYZ-38-t0r" id="ch0-1p-Usd"/>
+                                <action selector="profileButtonAction:" destination="BYZ-38-t0r" id="F4b-vY-xKJ"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="circle.grid.2x2.fill" catalog="system" id="dJ3-Lw-sOq">
+                        <barButtonItem key="rightBarButtonItem" image="setting" id="ukW-om-OEN">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <action selector="settingsButtonAction:" destination="BYZ-38-t0r" id="7fb-Bn-RRn"/>
+                                <action selector="settingsButtonAction:" destination="BYZ-38-t0r" id="6aZ-1m-8mF"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="sportsTableView" destination="H8H-i0-9Zi" id="KyB-RV-MEQ"/>
@@ -67,12 +67,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="GHC-8H-ziX">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <navigationBarAppearance key="scrollEdgeAppearance">
-                            <color key="backgroundColor" systemColor="systemTealColor"/>
-                            <textAttributes key="titleTextAttributes">
-                                <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </textAttributes>
-                        </navigationBarAppearance>
+                        <color key="barTintColor" red="0.0" green="0.56862745098039214" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -85,13 +83,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="circle.grid.2x2.fill" catalog="system" width="128" height="112"/>
-        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="setting" width="30" height="30"/>
+        <image name="user" width="30" height="30"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemTealColor">
-            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
