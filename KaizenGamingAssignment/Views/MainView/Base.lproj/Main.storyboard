@@ -16,25 +16,44 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="H8H-i0-9Zi">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="QYM-ia-l4h"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="O9L-cJ-xLE"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="H8H-i0-9Zi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="1wz-KH-Nb6"/>
+                            <constraint firstAttribute="bottom" secondItem="H8H-i0-9Zi" secondAttribute="bottom" id="EqR-B2-Q8u"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="H8H-i0-9Zi" secondAttribute="trailing" id="KID-5E-5qE"/>
+                            <constraint firstItem="H8H-i0-9Zi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WiF-4t-gGc"/>
+                        </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="g9T-KH-63m">
-                        <barButtonItem key="leftBarButtonItem" image="person.fill" catalog="system" style="plain" id="lAY-7s-aT8">
+                    <navigationItem key="navigationItem" id="OaU-qM-t3q">
+                        <barButtonItem key="leftBarButtonItem" image="person.fill" catalog="system" style="plain" id="cTZ-GC-S57">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <action selector="porfileButtonAction:" destination="BYZ-38-t0r" id="WCo-b9-dEL"/>
+                                <action selector="porfileButtonAction:" destination="BYZ-38-t0r" id="ch0-1p-Usd"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="circle.grid.2x2.fill" catalog="system" id="ZqL-rQ-UbU">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="circle.grid.2x2.fill" catalog="system" id="dJ3-Lw-sOq">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <action selector="settingsButtonAction:" destination="BYZ-38-t0r" id="6bF-Ru-RE6"/>
+                                <action selector="settingsButtonAction:" destination="BYZ-38-t0r" id="7fb-Bn-RRn"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="sportsTableView" destination="H8H-i0-9Zi" id="KyB-RV-MEQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

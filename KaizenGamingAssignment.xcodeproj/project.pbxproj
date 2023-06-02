@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D41BE122A2A692800FF8CCC /* SportsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D41BE102A2A692800FF8CCC /* SportsTableViewCell.swift */; };
+		1D41BE132A2A692800FF8CCC /* SportsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D41BE112A2A692800FF8CCC /* SportsTableViewCell.xib */; };
 		1D46AB5C2A28AE0C007C2710 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D46AB5B2A28AE0C007C2710 /* AppDelegate.swift */; };
 		1D46AB602A28AE0C007C2710 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D46AB5F2A28AE0C007C2710 /* MainViewController.swift */; };
 		1D46AB632A28AE0C007C2710 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D46AB612A28AE0C007C2710 /* Main.storyboard */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D41BE102A2A692800FF8CCC /* SportsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsTableViewCell.swift; sourceTree = "<group>"; };
+		1D41BE112A2A692800FF8CCC /* SportsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SportsTableViewCell.xib; sourceTree = "<group>"; };
 		1D46AB582A28AE0C007C2710 /* KaizenGamingAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KaizenGamingAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D46AB5B2A28AE0C007C2710 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D46AB5F2A28AE0C007C2710 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +80,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D41BE0F2A2A68D500FF8CCC /* SportsTableView */ = {
+			isa = PBXGroup;
+			children = (
+				1D41BE102A2A692800FF8CCC /* SportsTableViewCell.swift */,
+				1D41BE112A2A692800FF8CCC /* SportsTableViewCell.xib */,
+			);
+			path = SportsTableView;
+			sourceTree = "<group>";
+		};
 		1D46AB4F2A28AE0C007C2710 = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +173,7 @@
 		1D46AB8F2A2A0CAB007C2710 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1D41BE0F2A2A68D500FF8CCC /* SportsTableView */,
 				1D46AB912A2A0D50007C2710 /* LaunchScreen */,
 				1D46AB902A2A0D44007C2710 /* MainView */,
 			);
@@ -289,6 +303,7 @@
 			files = (
 				1D46AB682A28AE12007C2710 /* LaunchScreen.storyboard in Resources */,
 				1D46AB652A28AE12007C2710 /* Assets.xcassets in Resources */,
+				1D41BE132A2A692800FF8CCC /* SportsTableViewCell.xib in Resources */,
 				1D46AB632A28AE0C007C2710 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,6 +331,7 @@
 			files = (
 				1D46AB602A28AE0C007C2710 /* MainViewController.swift in Sources */,
 				1D46AB5C2A28AE0C007C2710 /* AppDelegate.swift in Sources */,
+				1D41BE122A2A692800FF8CCC /* SportsTableViewCell.swift in Sources */,
 				1D46AB932A2A1312007C2710 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
