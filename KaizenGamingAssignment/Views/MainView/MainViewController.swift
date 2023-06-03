@@ -54,6 +54,7 @@ final class MainViewController: UIViewController {
         if #available(iOS 15.0, *) {
             sportsTableView.sectionHeaderTopPadding = 0.0
         }
+        
     }
     
     // MARK: - Navigation Bar Actions

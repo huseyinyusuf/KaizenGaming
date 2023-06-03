@@ -9,6 +9,7 @@ import UIKit
 
 class SportsTableViewCell: UITableViewCell {
     @IBOutlet var eventsCollectionView: UICollectionView!
+    var event = "Manchester United"
     
     static var nib:UINib {
         let nibName = String(describing: self)
