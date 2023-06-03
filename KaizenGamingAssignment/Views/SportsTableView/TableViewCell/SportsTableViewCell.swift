@@ -8,6 +8,7 @@
 import UIKit
 
 class SportsTableViewCell: UITableViewCell {
+    @IBOutlet var eventsCollectionView: UICollectionView!
     
     static var nib:UINib {
         let nibName = String(describing: self)
@@ -20,7 +21,13 @@ class SportsTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        // Init delegate methods for collectionView
+        eventsCollectionView.delegate = self
+        eventsCollectionView.dataSource = self
+        
+        // Register collectionview reusable cell
+        eventsCollectionView.register(EventsCollectionViewCell.nib, forCellWithReuseIdentifier: EventsCollectionViewCell.reuseIdentifier)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -30,3 +37,4 @@ class SportsTableViewCell: UITableViewCell {
     }
     
 }
+

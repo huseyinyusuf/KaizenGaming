@@ -32,6 +32,7 @@ final class MainViewController: UIViewController {
         
         // Init sportsTableView delegate and datasourse
         setupSportsTableView()
+        
     }
     
     private func setupNavigationBarTitle() {
@@ -71,6 +72,10 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "sportCellIdentifier", for: indexPath) as? SportsTableViewCell ?? UITableViewCell()
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
     }
     
     
