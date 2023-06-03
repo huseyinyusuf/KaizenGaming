@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeaderUIView" customModule="KaizenGamingAssignment" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="Pqw-bF-aS7" id="tyQ-Ww-DEW"/>
+                <outlet property="extendCollapseButton" destination="zcU-g5-Ibp" id="drw-0v-H8L"/>
+                <outlet property="sportImageView" destination="D9K-pT-TNx" id="O5b-jE-nod"/>
+                <outlet property="sportName" destination="fAl-1R-g29" id="Th7-10-9cG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Pqw-bF-aS7">
+            <rect key="frame" x="0.0" y="0.0" width="463" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="om9-aP-8Qg">
+                    <rect key="frame" x="10" y="12" width="397" height="36"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D9K-pT-TNx">
+                            <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="D9K-pT-TNx" secondAttribute="height" multiplier="1:1" id="iBH-QI-U1V"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAl-1R-g29">
+                            <rect key="frame" x="44" y="0.0" width="353" height="36"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="fAl-1R-g29" firstAttribute="height" secondItem="om9-aP-8Qg" secondAttribute="height" id="8fh-tL-HYm"/>
+                        <constraint firstItem="D9K-pT-TNx" firstAttribute="height" secondItem="om9-aP-8Qg" secondAttribute="height" id="ZH9-Pp-mJn"/>
+                    </constraints>
+                </stackView>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zcU-g5-Ibp">
+                    <rect key="frame" x="417" y="12" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="zcU-g5-Ibp" secondAttribute="height" multiplier="1:1" id="VCM-cI-9qA"/>
+                    </constraints>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="extendCollapseAction:" destination="-1" eventType="touchUpInside" id="AtA-gi-MlX"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="MfO-ik-Fnc"/>
+            <color key="backgroundColor" red="0.14117647058823529" green="0.16862745098039217" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zcU-g5-Ibp" firstAttribute="centerY" secondItem="Pqw-bF-aS7" secondAttribute="centerY" id="1Ly-fl-3wu"/>
+                <constraint firstItem="om9-aP-8Qg" firstAttribute="centerY" secondItem="zcU-g5-Ibp" secondAttribute="centerY" id="29E-S2-VFk"/>
+                <constraint firstItem="zcU-g5-Ibp" firstAttribute="leading" secondItem="om9-aP-8Qg" secondAttribute="trailing" constant="10" id="Hf1-Vc-1ad"/>
+                <constraint firstItem="om9-aP-8Qg" firstAttribute="height" secondItem="zcU-g5-Ibp" secondAttribute="height" id="Hk7-BY-Hey"/>
+                <constraint firstItem="om9-aP-8Qg" firstAttribute="leading" secondItem="MfO-ik-Fnc" secondAttribute="leading" constant="10" id="Kq0-kD-OzQ"/>
+                <constraint firstItem="zcU-g5-Ibp" firstAttribute="height" secondItem="Pqw-bF-aS7" secondAttribute="height" multiplier="0.6" id="Tgl-wm-zjf"/>
+                <constraint firstItem="zcU-g5-Ibp" firstAttribute="trailing" secondItem="MfO-ik-Fnc" secondAttribute="trailing" constant="-10" id="q61-CN-2rm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="281.8840579710145" y="46.205357142857139"/>
+        </view>
+    </objects>
+</document>
