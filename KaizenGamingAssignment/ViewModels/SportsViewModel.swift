@@ -68,7 +68,26 @@ final class SportsViewModel {
         return indexPaths
     }
     
+    func updateSportsWithEvent(event: Event?) {
+        for (sportIndex, sport) in sports.enumerated(){
+            if (event?.sportId == sport.sportId) {
+                for (eventIndex, sportEvent) in sport.events.enumerated() {
+                    if (event?.eventId == sportEvent.eventId) {
+                        // Change favourite
+                        sports[sportIndex].events[eventIndex].isFavourite.toggle()
+                        // Sort with favourites 1st
+                        sortEventsWithFavouriteFirst(sportIndex: sportIndex)
+                    }
+                }
+            }
+        }
+    }
+    
     // MARK: - Private Methods -
+    private func sortEventsWithFavouriteFirst(sportIndex: Int) {
+        sports[sportIndex].events = sports[sportIndex].events.sorted{ $0.isFavourite && !$1.isFavourite }
+    }
+    
     private func fetchDataFromInternet() {
         NetworkManager.shared.fetchSportsData { [weak self] (sportsJsonArray, error) in
             guard let jsonArray = sportsJsonArray else { return }

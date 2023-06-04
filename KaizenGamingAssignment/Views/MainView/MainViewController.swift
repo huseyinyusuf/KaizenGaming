@@ -81,6 +81,7 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
               let sport = vm.getSportWithSection(section: indexPath.section) else { return UITableViewCell() }
     
         cell.configureSportsTableViewCell(sport: sport, section: indexPath.section)
+        cell.delegate = self
         return cell
     }
     
@@ -118,6 +119,8 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
     
 }
 
+// MARK: - Delegate extensions -
+// All of these Extension can be move to seperate folders
 extension MainViewController: HeaderDelegate {
     
     func didClickExtendCollapseButton(section: Int?) {
@@ -134,10 +137,23 @@ extension MainViewController: HeaderDelegate {
                                        with: .fade)
         }
     }
+    
 }
 
 extension MainViewController: ViewModelDelegate {
+    
     func shouldReloadTableView() {
+        sportsTableView.reloadData()
+    }
+    
+}
+
+extension MainViewController: ViewModelUpdateDelegate {
+    
+    func updateViewModelEvent(event: Event?) {
+        guard let vm = vm,
+              let event = event else { return }
+        vm.updateSportsWithEvent(event: event)
         sportsTableView.reloadData()
     }
     

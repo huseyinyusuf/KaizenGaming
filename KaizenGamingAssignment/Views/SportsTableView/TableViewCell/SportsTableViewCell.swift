@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol ViewModelUpdateDelegate: AnyObject {
+    func updateViewModelEvent(event:Event?)
+}
+
 class SportsTableViewCell: UITableViewCell {
     // MARK: - Outlets -
     @IBOutlet var eventsCollectionView: UICollectionView!
@@ -15,6 +19,8 @@ class SportsTableViewCell: UITableViewCell {
     private(set) var events: [Event] = []
     private(set) var section: Int = 0
     private(set) var sport: Sport?
+    
+    weak var delegate: ViewModelUpdateDelegate?
     
     static var nib:UINib {
         let nibName = String(describing: self)

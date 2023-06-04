@@ -21,7 +21,8 @@ extension SportsTableViewCell: UICollectionViewDelegate, UICollectionViewDataSou
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: EventsCollectionViewCell.reuseIdentifier, for: indexPath) as? EventsCollectionViewCell
         guard let cell = cell else { return UICollectionViewCell() }
         cell.configureCell(event: self.events[indexPath.item])
-        
+        cell.delegate = self
+
         return cell
     }
     
@@ -37,6 +38,16 @@ extension SportsTableViewCell: UICollectionViewDelegate, UICollectionViewDataSou
             default:
                 return CGSize(width: 108, height: 130)
         }
+    }
+    
+}
+
+// MARK: - Delegate extensions -
+extension SportsTableViewCell: CollectionCellelegate {
+    
+    func favouriteButtonPressed(event: Event?) {
+        delegate?.updateViewModelEvent(event: event)
+        self.eventsCollectionView.reloadData()
     }
     
 }

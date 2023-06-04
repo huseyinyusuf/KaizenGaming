@@ -10,7 +10,8 @@ struct Event {
     var sportId: String
     var competitor1: String
     var competitor2: String
-    var startTime: String
+    var startTime: Int64
+    var isFavourite: Bool
     
     init(json: JSON) {
         self.eventId = json["i"] as? String ?? ""
@@ -21,6 +22,7 @@ struct Event {
         let eventNameArray = trimmedEventName.components(separatedBy: "-")
         self.competitor1 = eventNameArray[0]
         self.competitor2 = eventNameArray[1]
-        self.startTime = ""
+        self.startTime = json["tt"] as? Int64 ?? 0
+        self.isFavourite = false
     }
 }
