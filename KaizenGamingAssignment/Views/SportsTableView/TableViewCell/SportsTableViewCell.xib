@@ -23,7 +23,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="0xt-6E-Rd0">
                                 <rect key="frame" x="5" y="0.0" width="310" height="150"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="STq-N2-3bg">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="3" id="STq-N2-3bg">
                                     <size key="itemSize" width="108" height="120"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -35,7 +35,7 @@
                                 </connections>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.10980392156862745" green="0.12549019607843137" blue="0.14901960784313725" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="0xt-6E-Rd0" firstAttribute="leading" secondItem="cW6-nL-TgF" secondAttribute="leading" constant="5" id="8J9-cz-Qmc"/>
                             <constraint firstAttribute="bottom" secondItem="0xt-6E-Rd0" secondAttribute="bottom" id="KyU-gv-TSl"/>
@@ -47,7 +47,7 @@
                         </constraints>
                     </view>
                 </subviews>
-                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <color key="backgroundColor" red="0.10980392156862745" green="0.12549019607843137" blue="0.14901960784313725" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
                     <constraint firstItem="cW6-nL-TgF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="4z8-FL-72v"/>
                     <constraint firstItem="cW6-nL-TgF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="BpE-ji-XcJ"/>
