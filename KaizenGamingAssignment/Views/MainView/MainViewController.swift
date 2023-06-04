@@ -76,8 +76,11 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
     // MARK: Cell Configuration
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "sportCellIdentifier", for: indexPath) as? SportsTableViewCell
-        guard let cell = cell else { return UITableViewCell() }
+        guard let cell = cell,
+              let vm = vm,
+              let sport = vm.getSportWithSection(section: indexPath.section) else { return UITableViewCell() }
     
+        cell.configureSportsTableViewCell(sport: sport, section: indexPath.section)
         return cell
     }
     

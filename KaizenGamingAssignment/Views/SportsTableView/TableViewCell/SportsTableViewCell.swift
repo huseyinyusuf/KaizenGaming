@@ -12,8 +12,9 @@ class SportsTableViewCell: UITableViewCell {
     @IBOutlet var eventsCollectionView: UICollectionView!
     
     // MARK: - Variables -
+    private(set) var events: [Event] = []
+    private(set) var section: Int = 0
     private(set) var sport: Sport?
-    private(set) var event = "Manchester United"
     
     static var nib:UINib {
         let nibName = String(describing: self)
@@ -36,9 +37,13 @@ class SportsTableViewCell: UITableViewCell {
         eventsCollectionView.register(EventsCollectionViewCell.nib, forCellWithReuseIdentifier: EventsCollectionViewCell.reuseIdentifier)
     }
     
-    // MARK: - Private methods -
-    func configureCell(sport: Sport?) {
+    // MARK: - Public methods -
+    func configureSportsTableViewCell(sport: Sport, section: Int) {
         self.sport = sport
+        self.events = sport.events
+        self.section = section
+        
+        self.eventsCollectionView.reloadData()
     }
     
 }

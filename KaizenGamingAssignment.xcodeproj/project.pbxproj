@@ -198,8 +198,8 @@
 		1D46AB8D2A2A0C92007C2710 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1D6FFC732A2CCE32000E2D43 /* Sport.swift */,
-				1D6FFC752A2CCF4C000E2D43 /* Event.swift */,
+				1D671B4B2A2CF88C00F91839 /* Sport */,
+				1D671B4C2A2CF89700F91839 /* Event */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -257,6 +257,22 @@
 				1D58FF7C2A2B4C790020E96A /* HeaderUIView.xib */,
 			);
 			path = TableViewSectionHeader;
+			sourceTree = "<group>";
+		};
+		1D671B4B2A2CF88C00F91839 /* Sport */ = {
+			isa = PBXGroup;
+			children = (
+				1D6FFC732A2CCE32000E2D43 /* Sport.swift */,
+			);
+			path = Sport;
+			sourceTree = "<group>";
+		};
+		1D671B4C2A2CF89700F91839 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				1D6FFC752A2CCF4C000E2D43 /* Event.swift */,
+			);
+			path = Event;
 			sourceTree = "<group>";
 		};
 		1DD3A2262A2BBB5F008E4C70 /* EventsCollectionView */ = {

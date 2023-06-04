@@ -5,7 +5,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -28,16 +27,16 @@
                                         <rect key="frame" x="0.0" y="0.0" width="82" height="39"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bCq-QV-W8m">
-                                                <rect key="frame" x="9" y="6.5" width="64" height="26"/>
+                                                <rect key="frame" x="8" y="6.5" width="66.5" height="26"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11:30:11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKL-HX-4AG">
-                                                        <rect key="frame" x="2" y="4" width="60" height="18"/>
-                                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="16"/>
-                                                        <nil key="textColor"/>
+                                                        <rect key="frame" x="2" y="4" width="62.5" height="18"/>
+                                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="16"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="nKL-HX-4AG" firstAttribute="top" secondItem="bCq-QV-W8m" secondAttribute="top" constant="4" id="83P-gi-zml"/>
                                                     <constraint firstAttribute="trailing" secondItem="nKL-HX-4AG" secondAttribute="trailing" constant="2" id="MH6-Zq-s9U"/>
@@ -103,7 +102,7 @@
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <color key="backgroundColor" systemColor="systemRedColor"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="dfY-LL-hu7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="7CU-DC-0ej"/>
                 <constraint firstAttribute="bottom" secondItem="dfY-LL-hu7" secondAttribute="bottom" id="JHZ-Sz-YX0"/>
@@ -111,15 +110,13 @@
                 <constraint firstItem="dfY-LL-hu7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="qok-em-aVz"/>
             </constraints>
             <size key="customSize" width="82" height="112"/>
+            <connections>
+                <outlet property="competitor1Label" destination="F3w-GX-4z2" id="yZC-h5-X6J"/>
+                <outlet property="competitor2Label" destination="1Md-W7-xVb" id="Ufu-Z0-ZAR"/>
+                <outlet property="countDownLabel" destination="nKL-HX-4AG" id="6a3-al-1fk"/>
+                <outlet property="favouriteButton" destination="T9b-Ft-WJ0" id="LlY-L8-wOJ"/>
+            </connections>
             <point key="canvasLocation" x="160.86956521739131" y="72.991071428571431"/>
         </collectionViewCell>
     </objects>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>

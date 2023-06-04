@@ -10,7 +10,7 @@ import UIKit
 extension SportsTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return events.count
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -18,15 +18,17 @@ extension SportsTableViewCell: UICollectionViewDelegate, UICollectionViewDataSou
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: EventsCollectionViewCell.reuseIdentifier, for: indexPath) as? EventsCollectionViewCell ?? UICollectionViewCell()
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: EventsCollectionViewCell.reuseIdentifier, for: indexPath) as? EventsCollectionViewCell
+        guard let cell = cell else { return UICollectionViewCell() }
+        cell.configureCell(event: self.events[indexPath.item])
         
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
         // Customize cell width according to charecter size
-        let maxCompetitorCharecterCount = self.event.count
+        let event = self.events[indexPath.item]
+        let maxCompetitorCharecterCount = max(event.competitor1.count, event.competitor2.count)
         switch (maxCompetitorCharecterCount) {
             case 0 ..< 10:
                 return CGSize(width: 80, height: 130)
@@ -36,6 +38,5 @@ extension SportsTableViewCell: UICollectionViewDelegate, UICollectionViewDataSou
                 return CGSize(width: 108, height: 130)
         }
     }
-
     
 }
