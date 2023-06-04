@@ -21,9 +21,14 @@
 		1D58FF7B2A2B4C650020E96A /* HeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D58FF7A2A2B4C650020E96A /* HeaderUIView.swift */; };
 		1D58FF7D2A2B4C790020E96A /* HeaderUIView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D58FF7C2A2B4C790020E96A /* HeaderUIView.xib */; };
 		1D58FF7F2A2B7DD40020E96A /* SportsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D58FF7E2A2B7DD40020E96A /* SportsViewModel.swift */; };
+		1D6FFC702A2C9A8E000E2D43 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 1D6FFC6F2A2C9A8E000E2D43 /* Podfile */; };
+		1D6FFC722A2C9B26000E2D43 /* NetoworManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6FFC712A2C9B26000E2D43 /* NetoworManager.swift */; };
 		1DD3A2292A2BBB96008E4C70 /* EventsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD3A2272A2BBB96008E4C70 /* EventsCollectionViewCell.swift */; };
 		1DD3A22A2A2BBB96008E4C70 /* EventsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DD3A2282A2BBB96008E4C70 /* EventsCollectionViewCell.xib */; };
 		1DD3A22F2A2BBEAD008E4C70 /* SportsTableViewCell+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD3A22E2A2BBEAD008E4C70 /* SportsTableViewCell+CollectionView.swift */; };
+		23008920C4280888853E6012 /* Pods_KaizenGamingAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFEF1A859F5DC82B0AE856EF /* Pods_KaizenGamingAssignment.framework */; };
+		8B38CFE0886D68C59F6BC8A0 /* Pods_KaizenGamingAssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AD4F6ABF36D6C539B1BCA99 /* Pods_KaizenGamingAssignmentTests.framework */; };
+		AAE4F77CF9FFBC6E413EBAE0 /* Pods_KaizenGamingAssignment_KaizenGamingAssignmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF09D3B596A151AA99CADB8 /* Pods_KaizenGamingAssignment_KaizenGamingAssignmentUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,9 +67,20 @@
 		1D58FF7A2A2B4C650020E96A /* HeaderUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderUIView.swift; sourceTree = "<group>"; };
 		1D58FF7C2A2B4C790020E96A /* HeaderUIView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderUIView.xib; sourceTree = "<group>"; };
 		1D58FF7E2A2B7DD40020E96A /* SportsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsViewModel.swift; sourceTree = "<group>"; };
+		1D6FFC6F2A2C9A8E000E2D43 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		1D6FFC712A2C9B26000E2D43 /* NetoworManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetoworManager.swift; sourceTree = "<group>"; };
 		1DD3A2272A2BBB96008E4C70 /* EventsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsCollectionViewCell.swift; sourceTree = "<group>"; };
 		1DD3A2282A2BBB96008E4C70 /* EventsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventsCollectionViewCell.xib; sourceTree = "<group>"; };
 		1DD3A22E2A2BBEAD008E4C70 /* SportsTableViewCell+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SportsTableViewCell+CollectionView.swift"; sourceTree = "<group>"; };
+		24AF87D749453ACE3EE596CE /* Pods-KaizenGamingAssignment-KaizenGamingAssignmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaizenGamingAssignment-KaizenGamingAssignmentUITests.debug.xcconfig"; path = "Target Support Files/Pods-KaizenGamingAssignment-KaizenGamingAssignmentUITests/Pods-KaizenGamingAssignment-KaizenGamingAssignmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		25161C8189B84DE8D929A634 /* Pods-KaizenGamingAssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaizenGamingAssignmentTests.debug.xcconfig"; path = "Target Support Files/Pods-KaizenGamingAssignmentTests/Pods-KaizenGamingAssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		49F6B0250AD16B5E1407D68D /* Pods-KaizenGamingAssignment-KaizenGamingAssignmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaizenGamingAssignment-KaizenGamingAssignmentUITests.release.xcconfig"; path = "Target Support Files/Pods-KaizenGamingAssignment-KaizenGamingAssignmentUITests/Pods-KaizenGamingAssignment-KaizenGamingAssignmentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7FF09D3B596A151AA99CADB8 /* Pods_KaizenGamingAssignment_KaizenGamingAssignmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KaizenGamingAssignment_KaizenGamingAssignmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82621C7103CB84A1C787F6C3 /* Pods-KaizenGamingAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaizenGamingAssignment.debug.xcconfig"; path = "Target Support Files/Pods-KaizenGamingAssignment/Pods-KaizenGamingAssignment.debug.xcconfig"; sourceTree = "<group>"; };
+		9AD4F6ABF36D6C539B1BCA99 /* Pods_KaizenGamingAssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KaizenGamingAssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFEF1A859F5DC82B0AE856EF /* Pods_KaizenGamingAssignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KaizenGamingAssignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE0926792B74BC140B12078D /* Pods-KaizenGamingAssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaizenGamingAssignmentTests.release.xcconfig"; path = "Target Support Files/Pods-KaizenGamingAssignmentTests/Pods-KaizenGamingAssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		E87B78C5C28F0ABBB4C3BF70 /* Pods-KaizenGamingAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaizenGamingAssignment.release.xcconfig"; path = "Target Support Files/Pods-KaizenGamingAssignment/Pods-KaizenGamingAssignment.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23008920C4280888853E6012 /* Pods_KaizenGamingAssignment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B38CFE0886D68C59F6BC8A0 /* Pods_KaizenGamingAssignmentTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAE4F77CF9FFBC6E413EBAE0 /* Pods_KaizenGamingAssignment_KaizenGamingAssignmentUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +127,8 @@
 				1D46AB712A28AE13007C2710 /* KaizenGamingAssignmentTests */,
 				1D46AB7B2A28AE13007C2710 /* KaizenGamingAssignmentUITests */,
 				1D46AB592A28AE0C007C2710 /* Products */,
+				30C8B13B5A4D100283ED29A7 /* Pods */,
+				5FD85A2CABC2286A222B2974 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +153,7 @@
 				1D46AB5B2A28AE0C007C2710 /* AppDelegate.swift */,
 				1D46AB922A2A1312007C2710 /* SceneDelegate.swift */,
 				1D46AB692A28AE12007C2710 /* Info.plist */,
+				1D6FFC6F2A2C9A8E000E2D43 /* Podfile */,
 			);
 			path = KaizenGamingAssignment;
 			sourceTree = "<group>";
@@ -156,6 +178,7 @@
 		1D46AB8B2A2A0AE5007C2710 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				1D6FFC712A2C9B26000E2D43 /* NetoworManager.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -247,6 +270,29 @@
 			path = CollectionViewCell;
 			sourceTree = "<group>";
 		};
+		30C8B13B5A4D100283ED29A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				82621C7103CB84A1C787F6C3 /* Pods-KaizenGamingAssignment.debug.xcconfig */,
+				E87B78C5C28F0ABBB4C3BF70 /* Pods-KaizenGamingAssignment.release.xcconfig */,
+				24AF87D749453ACE3EE596CE /* Pods-KaizenGamingAssignment-KaizenGamingAssignmentUITests.debug.xcconfig */,
+				49F6B0250AD16B5E1407D68D /* Pods-KaizenGamingAssignment-KaizenGamingAssignmentUITests.release.xcconfig */,
+				25161C8189B84DE8D929A634 /* Pods-KaizenGamingAssignmentTests.debug.xcconfig */,
+				DE0926792B74BC140B12078D /* Pods-KaizenGamingAssignmentTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5FD85A2CABC2286A222B2974 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFEF1A859F5DC82B0AE856EF /* Pods_KaizenGamingAssignment.framework */,
+				7FF09D3B596A151AA99CADB8 /* Pods_KaizenGamingAssignment_KaizenGamingAssignmentUITests.framework */,
+				9AD4F6ABF36D6C539B1BCA99 /* Pods_KaizenGamingAssignmentTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -254,9 +300,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D46AB822A28AE13007C2710 /* Build configuration list for PBXNativeTarget "KaizenGamingAssignment" */;
 			buildPhases = (
+				14657CEBF073935036DB245E /* [CP] Check Pods Manifest.lock */,
 				1D46AB542A28AE0C007C2710 /* Sources */,
 				1D46AB552A28AE0C007C2710 /* Frameworks */,
 				1D46AB562A28AE0C007C2710 /* Resources */,
+				6CA77CF3B12209FA2F6D9F81 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -271,6 +319,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D46AB852A28AE13007C2710 /* Build configuration list for PBXNativeTarget "KaizenGamingAssignmentTests" */;
 			buildPhases = (
+				2822B8CCE55601B3402AE34F /* [CP] Check Pods Manifest.lock */,
 				1D46AB6A2A28AE13007C2710 /* Sources */,
 				1D46AB6B2A28AE13007C2710 /* Frameworks */,
 				1D46AB6C2A28AE13007C2710 /* Resources */,
@@ -289,9 +338,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D46AB882A28AE13007C2710 /* Build configuration list for PBXNativeTarget "KaizenGamingAssignmentUITests" */;
 			buildPhases = (
+				C15FBCD916BFC26238C731AF /* [CP] Check Pods Manifest.lock */,
 				1D46AB742A28AE13007C2710 /* Sources */,
 				1D46AB752A28AE13007C2710 /* Frameworks */,
 				1D46AB762A28AE13007C2710 /* Resources */,
+				11D4FF986DF66488AE125115 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -356,6 +407,7 @@
 				1D58FF7D2A2B4C790020E96A /* HeaderUIView.xib in Resources */,
 				1D46AB652A28AE12007C2710 /* Assets.xcassets in Resources */,
 				1D41BE132A2A692800FF8CCC /* SportsTableViewCell.xib in Resources */,
+				1D6FFC702A2C9A8E000E2D43 /* Podfile in Resources */,
 				1D46AB632A28AE0C007C2710 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,6 +428,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		11D4FF986DF66488AE125115 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KaizenGamingAssignment-KaizenGamingAssignmentUITests/Pods-KaizenGamingAssignment-KaizenGamingAssignmentUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KaizenGamingAssignment-KaizenGamingAssignmentUITests/Pods-KaizenGamingAssignment-KaizenGamingAssignmentUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KaizenGamingAssignment-KaizenGamingAssignmentUITests/Pods-KaizenGamingAssignment-KaizenGamingAssignmentUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		14657CEBF073935036DB245E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KaizenGamingAssignment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2822B8CCE55601B3402AE34F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KaizenGamingAssignmentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CA77CF3B12209FA2F6D9F81 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KaizenGamingAssignment/Pods-KaizenGamingAssignment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KaizenGamingAssignment/Pods-KaizenGamingAssignment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KaizenGamingAssignment/Pods-KaizenGamingAssignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C15FBCD916BFC26238C731AF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KaizenGamingAssignment-KaizenGamingAssignmentUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1D46AB542A28AE0C007C2710 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -389,6 +544,7 @@
 				1DD3A2292A2BBB96008E4C70 /* EventsCollectionViewCell.swift in Sources */,
 				1D46AB932A2A1312007C2710 /* SceneDelegate.swift in Sources */,
 				1D58FF7B2A2B4C650020E96A /* HeaderUIView.swift in Sources */,
+				1D6FFC722A2C9B26000E2D43 /* NetoworManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,6 +718,7 @@
 		};
 		1D46AB832A28AE13007C2710 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82621C7103CB84A1C787F6C3 /* Pods-KaizenGamingAssignment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -593,6 +750,7 @@
 		};
 		1D46AB842A28AE13007C2710 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E87B78C5C28F0ABBB4C3BF70 /* Pods-KaizenGamingAssignment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -624,6 +782,7 @@
 		};
 		1D46AB862A28AE13007C2710 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25161C8189B84DE8D929A634 /* Pods-KaizenGamingAssignmentTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -644,6 +803,7 @@
 		};
 		1D46AB872A28AE13007C2710 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE0926792B74BC140B12078D /* Pods-KaizenGamingAssignmentTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -664,6 +824,7 @@
 		};
 		1D46AB892A28AE13007C2710 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24AF87D749453ACE3EE596CE /* Pods-KaizenGamingAssignment-KaizenGamingAssignmentUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -682,6 +843,7 @@
 		};
 		1D46AB8A2A28AE13007C2710 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49F6B0250AD16B5E1407D68D /* Pods-KaizenGamingAssignment-KaizenGamingAssignmentUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

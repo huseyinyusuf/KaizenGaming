@@ -18,6 +18,8 @@ final class MainViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         setup()
+        NetworkManager.shared.fetchSportsData { (data, error) in
+        }
     }
     
     // MARK: - Private methods -

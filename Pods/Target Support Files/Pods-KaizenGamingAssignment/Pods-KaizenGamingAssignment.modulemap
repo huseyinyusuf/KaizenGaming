@@ -1,0 +1,6 @@
+framework module Pods_KaizenGamingAssignment {
+  umbrella header "Pods-KaizenGamingAssignment-umbrella.h"
+
+  export *
+  module * { export * }
+}
