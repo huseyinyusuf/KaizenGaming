@@ -88,6 +88,9 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
         return UITableView.automaticDimension
     }
     
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150
+    }
     
     // MARK: Sections Configuration
     func numberOfSections(in tableView: UITableView) -> Int {

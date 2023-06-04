@@ -24,10 +24,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="82" height="112"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r1s-T7-fme">
-                                        <rect key="frame" x="0.0" y="0.0" width="82" height="39"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="82" height="36"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bCq-QV-W8m">
-                                                <rect key="frame" x="8" y="6.5" width="66.5" height="26"/>
+                                                <rect key="frame" x="8" y="5" width="66.5" height="26"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11:30:11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKL-HX-4AG">
                                                         <rect key="frame" x="2" y="4" width="62.5" height="18"/>
@@ -52,10 +52,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="370-kj-rGu">
-                                        <rect key="frame" x="0.0" y="39" width="82" height="39.5"/>
+                                        <rect key="frame" x="0.0" y="36" width="82" height="35.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T9b-Ft-WJ0">
-                                                <rect key="frame" x="27.5" y="6" width="27" height="27.5"/>
+                                                <rect key="frame" x="28.5" y="5" width="25" height="25.5"/>
                                                 <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="T9b-Ft-WJ0" secondAttribute="height" multiplier="1:1" id="Wq1-1D-qOl"/>
@@ -72,13 +72,13 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Barcelona" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F3w-GX-4z2">
-                                        <rect key="frame" x="0.0" y="78.5" width="82" height="16.5"/>
+                                        <rect key="frame" x="0.0" y="71.5" width="82" height="20.5"/>
                                         <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="13"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Manchester United" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Md-W7-xVb">
-                                        <rect key="frame" x="0.0" y="95" width="82" height="17"/>
+                                        <rect key="frame" x="0.0" y="92" width="82" height="20"/>
                                         <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="13"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -86,8 +86,8 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="1Md-W7-xVb" firstAttribute="height" secondItem="F3w-GX-4z2" secondAttribute="height" id="eUq-bH-qjO"/>
-                                    <constraint firstItem="370-kj-rGu" firstAttribute="height" secondItem="JSL-8y-5dA" secondAttribute="height" multiplier="0.35" id="rUf-pc-LWL"/>
-                                    <constraint firstItem="r1s-T7-fme" firstAttribute="height" secondItem="JSL-8y-5dA" secondAttribute="height" multiplier="0.35" id="x3i-8G-3RK"/>
+                                    <constraint firstItem="370-kj-rGu" firstAttribute="height" secondItem="JSL-8y-5dA" secondAttribute="height" multiplier="0.32" id="rUf-pc-LWL"/>
+                                    <constraint firstItem="r1s-T7-fme" firstAttribute="height" secondItem="JSL-8y-5dA" secondAttribute="height" multiplier="0.32" id="x3i-8G-3RK"/>
                                 </constraints>
                             </stackView>
                         </subviews>
