@@ -23,6 +23,8 @@
 		1D58FF7F2A2B7DD40020E96A /* SportsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D58FF7E2A2B7DD40020E96A /* SportsViewModel.swift */; };
 		1D6FFC702A2C9A8E000E2D43 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 1D6FFC6F2A2C9A8E000E2D43 /* Podfile */; };
 		1D6FFC722A2C9B26000E2D43 /* NetoworManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6FFC712A2C9B26000E2D43 /* NetoworManager.swift */; };
+		1D6FFC742A2CCE32000E2D43 /* Sport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6FFC732A2CCE32000E2D43 /* Sport.swift */; };
+		1D6FFC762A2CCF4C000E2D43 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6FFC752A2CCF4C000E2D43 /* Event.swift */; };
 		1DD3A2292A2BBB96008E4C70 /* EventsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD3A2272A2BBB96008E4C70 /* EventsCollectionViewCell.swift */; };
 		1DD3A22A2A2BBB96008E4C70 /* EventsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DD3A2282A2BBB96008E4C70 /* EventsCollectionViewCell.xib */; };
 		1DD3A22F2A2BBEAD008E4C70 /* SportsTableViewCell+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD3A22E2A2BBEAD008E4C70 /* SportsTableViewCell+CollectionView.swift */; };
@@ -69,6 +71,8 @@
 		1D58FF7E2A2B7DD40020E96A /* SportsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsViewModel.swift; sourceTree = "<group>"; };
 		1D6FFC6F2A2C9A8E000E2D43 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
 		1D6FFC712A2C9B26000E2D43 /* NetoworManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetoworManager.swift; sourceTree = "<group>"; };
+		1D6FFC732A2CCE32000E2D43 /* Sport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sport.swift; sourceTree = "<group>"; };
+		1D6FFC752A2CCF4C000E2D43 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		1DD3A2272A2BBB96008E4C70 /* EventsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsCollectionViewCell.swift; sourceTree = "<group>"; };
 		1DD3A2282A2BBB96008E4C70 /* EventsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventsCollectionViewCell.xib; sourceTree = "<group>"; };
 		1DD3A22E2A2BBEAD008E4C70 /* SportsTableViewCell+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SportsTableViewCell+CollectionView.swift"; sourceTree = "<group>"; };
@@ -194,6 +198,8 @@
 		1D46AB8D2A2A0C92007C2710 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1D6FFC732A2CCE32000E2D43 /* Sport.swift */,
+				1D6FFC752A2CCF4C000E2D43 /* Event.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -536,6 +542,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D6FFC742A2CCE32000E2D43 /* Sport.swift in Sources */,
+				1D6FFC762A2CCF4C000E2D43 /* Event.swift in Sources */,
 				1D58FF7F2A2B7DD40020E96A /* SportsViewModel.swift in Sources */,
 				1D46AB602A28AE0C007C2710 /* MainViewController.swift in Sources */,
 				1D46AB5C2A28AE0C007C2710 /* AppDelegate.swift in Sources */,

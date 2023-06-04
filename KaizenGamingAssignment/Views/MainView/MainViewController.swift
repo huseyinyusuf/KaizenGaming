@@ -11,15 +11,15 @@ final class MainViewController: UIViewController {
     
     // MARK: - Outlets -
     @IBOutlet var sportsTableView: UITableView!
-    let vm = SportsViewModel()
+    
+    // MARK: - Properties -
+    private var vm: SportsViewModel?
     
     // MARK: - View Controller Override methods -
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         setup()
-        NetworkManager.shared.fetchSportsData { (data, error) in
-        }
     }
     
     // MARK: - Private methods -
@@ -35,6 +35,8 @@ final class MainViewController: UIViewController {
         // Init sportsTableView delegate and datasourse
         setupSportsTableView()
         
+        // Set View model
+        vm = SportsViewModel(delegate: self)
     }
     
     private func setupNavigationBarTitle() {
@@ -73,7 +75,9 @@ final class MainViewController: UIViewController {
 extension MainViewController: UITableViewDataSource, UITableViewDelegate {
     // MARK: Cell Configuration
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "sportCellIdentifier", for: indexPath) as? SportsTableViewCell ?? UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "sportCellIdentifier", for: indexPath) as? SportsTableViewCell
+        guard let cell = cell else { return UITableViewCell() }
+    
         return cell
     }
     
@@ -84,20 +88,24 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
     
     // MARK: Sections Configuration
     func numberOfSections(in tableView: UITableView) -> Int {
+        guard let vm = vm else { return 0 }
         return vm.numberOfSections()
     }
         
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        guard let vm = vm else { return 0 }
         return vm.numberOfRowsInSection(section: section)
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 50
+        return 40
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        guard let vm = vm else { return UIView() }
         let headerView = HeaderUIView()
-        headerView.initHeaderSection(section: section, isHidden: vm.isSectionHidden(section: section))
+        let sport = vm.getSportWithSection(section: section)
+        headerView.configureHeaderView(sport: sport, section: section, isHidden: vm.isSectionHidden(section: section))
         headerView.delegate = self
         return headerView
     }
@@ -107,7 +115,8 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
 extension MainViewController: HeaderDelegate {
     
     func didClickExtendCollapseButton(section: Int?) {
-        guard let section = section else { return }
+        guard let section = section,
+              let vm = vm else { return }
         
         if (vm.isSectionHidden(section: section)) {
             vm.removeSectionFromHidenSections(section: section)
@@ -125,3 +134,9 @@ extension MainViewController: HeaderDelegate {
     }
 }
 
+extension MainViewController: ViewModelDelegate {
+    func shouldReloadTableView() {
+        sportsTableView.reloadData()
+    }
+    
+}

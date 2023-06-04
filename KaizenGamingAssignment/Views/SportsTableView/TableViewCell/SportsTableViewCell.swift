@@ -8,8 +8,12 @@
 import UIKit
 
 class SportsTableViewCell: UITableViewCell {
+    // MARK: - Outlets -
     @IBOutlet var eventsCollectionView: UICollectionView!
-    var event = "Manchester United"
+    
+    // MARK: - Variables -
+    private(set) var sport: Sport?
+    private(set) var event = "Manchester United"
     
     static var nib:UINib {
         let nibName = String(describing: self)
@@ -20,6 +24,7 @@ class SportsTableViewCell: UITableViewCell {
         return "sportCellIdentifier"
     }
 
+    // MARK: - Overrides -
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -30,11 +35,10 @@ class SportsTableViewCell: UITableViewCell {
         // Register collectionview reusable cell
         eventsCollectionView.register(EventsCollectionViewCell.nib, forCellWithReuseIdentifier: EventsCollectionViewCell.reuseIdentifier)
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    // MARK: - Private methods -
+    func configureCell(sport: Sport?) {
+        self.sport = sport
     }
     
 }

@@ -7,20 +7,36 @@
 
 import Foundation
 
+protocol ViewModelDelegate: AnyObject {
+    func shouldReloadTableView()
+}
+
 final class SportsViewModel {
     
-    private var items = [[1], [1], [1]]
+    // MARK: - Properties -
+    weak var delegate: ViewModelDelegate?
+    private var sports: [Sport] = []
     private var hidenSections = Set<Int>()
     
+    // MARK: - Initializers -
+    init(delegate: ViewModelDelegate) {
+        self.delegate = delegate
+        fetchDataFromInternet()
+    }
+    // MARK: - Public Methods -
     func numberOfSections() -> Int {
-        return items.count
+        return sports.count
+    }
+    
+    func getSportWithSection(section: Int) -> Sport? {
+        return sports[section]
     }
     
     func numberOfRowsInSection(section: Int) -> Int {
         if (isSectionHidden(section: section)) {
             return 0
         } else {
-            return items[section].count
+            return 1
         }
     }
     
@@ -45,11 +61,23 @@ final class SportsViewModel {
     func indexPathsForSection(section: Int) -> [IndexPath] {
         var indexPaths = [IndexPath]()
         
-        for row in  0..<items[section].count {
+        for row in  0..<1 {
             indexPaths.append(IndexPath(row: row, section: section))
         }
         
         return indexPaths
+    }
+    
+    // MARK: - Private Methods -
+    private func fetchDataFromInternet() {
+        NetworkManager.shared.fetchSportsData { [weak self] (sportsJsonArray, error) in
+            guard let jsonArray = sportsJsonArray else { return }
+            for json in jsonArray {
+                let sport = Sport(json: json)
+                self?.sports.append(sport)
+                self?.delegate?.shouldReloadTableView()
+            }
+        }
     }
     
 }

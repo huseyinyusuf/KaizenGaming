@@ -8,7 +8,8 @@
 import Foundation
 import Alamofire
 
-public typealias responseHandler = (_ data: Data?, _ error: Error?) -> Void
+public typealias responseHandler = (_ jsonArray: [JSON]?, _ error: Error?) -> Void
+public typealias JSON = [String:Any]
 
 // Singleton class
 class NetworkManager {
@@ -21,12 +22,12 @@ class NetworkManager {
     func fetchSportsData(completion: @escaping responseHandler) {
         AF.request(endpoint, method: .get).response { response in
             switch (response.result) {
-                case .success(let data):
-                    guard let data = data else { return }
-                    if let string = String(data: data, encoding: .utf8) {
-                        print(string)
-                    }
-                    completion(data,nil)
+                case .success:
+                    guard let data = response.data,
+                          let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [JSON]
+                    else { return }
+                    debugPrint(json)
+                    completion (json,nil)
                 case .failure(let error):
                     print(error)
                     completion(nil,error)
