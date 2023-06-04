@@ -33,7 +33,7 @@ extension SportsTableViewCell: UICollectionViewDelegate, UICollectionViewDataSou
             case 0 ..< 10:
                 return CGSize(width: 80, height: 130)
             case 10 ..< 16:
-                return CGSize(width: maxCompetitorCharecterCount * 9, height: 130)
+                return CGSize(width: 80 + ( 28 / (16 - maxCompetitorCharecterCount)), height: 130)
             default:
                 return CGSize(width: 108, height: 130)
         }
