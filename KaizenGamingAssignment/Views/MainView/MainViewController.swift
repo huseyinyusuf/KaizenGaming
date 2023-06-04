@@ -130,10 +130,6 @@ extension MainViewController: HeaderDelegate {
             sportsTableView.deleteRows(at: vm.indexPathsForSection(section: section),
                                        with: .fade)
         }
-        
-        // Reload related section only instead of reloading all tableview
-        let indexSet = IndexSet(integer: section)
-        sportsTableView.reloadSections(indexSet, with: .none)
     }
 }
 
