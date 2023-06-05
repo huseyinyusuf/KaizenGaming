@@ -14,7 +14,6 @@
 		1D46AB632A28AE0C007C2710 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D46AB612A28AE0C007C2710 /* Main.storyboard */; };
 		1D46AB652A28AE12007C2710 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D46AB642A28AE12007C2710 /* Assets.xcassets */; };
 		1D46AB682A28AE12007C2710 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D46AB662A28AE12007C2710 /* LaunchScreen.storyboard */; };
-		1D46AB732A28AE13007C2710 /* KaizenGamingAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D46AB722A28AE13007C2710 /* KaizenGamingAssignmentTests.swift */; };
 		1D46AB7D2A28AE13007C2710 /* KaizenGamingAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D46AB7C2A28AE13007C2710 /* KaizenGamingAssignmentUITests.swift */; };
 		1D46AB7F2A28AE13007C2710 /* KaizenGamingAssignmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D46AB7E2A28AE13007C2710 /* KaizenGamingAssignmentUITestsLaunchTests.swift */; };
 		1D46AB932A2A1312007C2710 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D46AB922A2A1312007C2710 /* SceneDelegate.swift */; };
@@ -61,7 +60,6 @@
 		1D46AB672A28AE12007C2710 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D46AB692A28AE12007C2710 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D46AB6E2A28AE13007C2710 /* KaizenGamingAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KaizenGamingAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D46AB722A28AE13007C2710 /* KaizenGamingAssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaizenGamingAssignmentTests.swift; sourceTree = "<group>"; };
 		1D46AB782A28AE13007C2710 /* KaizenGamingAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KaizenGamingAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D46AB7C2A28AE13007C2710 /* KaizenGamingAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaizenGamingAssignmentUITests.swift; sourceTree = "<group>"; };
 		1D46AB7E2A28AE13007C2710 /* KaizenGamingAssignmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaizenGamingAssignmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -165,7 +163,6 @@
 		1D46AB712A28AE13007C2710 /* KaizenGamingAssignmentTests */ = {
 			isa = PBXGroup;
 			children = (
-				1D46AB722A28AE13007C2710 /* KaizenGamingAssignmentTests.swift */,
 			);
 			path = KaizenGamingAssignmentTests;
 			sourceTree = "<group>";
@@ -576,7 +573,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D46AB732A28AE13007C2710 /* KaizenGamingAssignmentTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -746,9 +742,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NW97XP3FY6;
+				DEVELOPMENT_TEAM = N9ZL4GJN7T;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = KaizenGamingAssignment/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -766,6 +763,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kaizen.KaizenGamingAssignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -778,9 +776,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NW97XP3FY6;
+				DEVELOPMENT_TEAM = N9ZL4GJN7T;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = KaizenGamingAssignment/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -798,6 +797,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kaizen.KaizenGamingAssignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
