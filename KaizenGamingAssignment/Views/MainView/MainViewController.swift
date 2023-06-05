@@ -79,7 +79,7 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
         guard let cell = cell,
               let vm = vm,
               let sport = vm.getSportWithSection(section: indexPath.section) else { return UITableViewCell() }
-    
+        
         cell.configureSportsTableViewCell(sport: sport, section: indexPath.section)
         cell.delegate = self
         return cell
@@ -98,7 +98,7 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
         guard let vm = vm else { return 0 }
         return vm.numberOfSections()
     }
-        
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let vm = vm else { return 0 }
         return vm.numberOfRowsInSection(section: section)

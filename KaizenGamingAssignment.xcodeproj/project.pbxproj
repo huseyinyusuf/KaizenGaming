@@ -69,7 +69,7 @@
 		1D58FF7A2A2B4C650020E96A /* HeaderUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderUIView.swift; sourceTree = "<group>"; };
 		1D58FF7C2A2B4C790020E96A /* HeaderUIView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderUIView.xib; sourceTree = "<group>"; };
 		1D58FF7E2A2B7DD40020E96A /* SportsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsViewModel.swift; sourceTree = "<group>"; };
-		1D6FFC6F2A2C9A8E000E2D43 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		1D6FFC6F2A2C9A8E000E2D43 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		1D6FFC712A2C9B26000E2D43 /* NetoworManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetoworManager.swift; sourceTree = "<group>"; };
 		1D6FFC732A2CCE32000E2D43 /* Sport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sport.swift; sourceTree = "<group>"; };
 		1D6FFC752A2CCF4C000E2D43 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };

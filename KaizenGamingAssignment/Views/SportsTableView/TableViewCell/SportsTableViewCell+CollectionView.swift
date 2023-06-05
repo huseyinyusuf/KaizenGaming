@@ -7,6 +7,7 @@
 
 import UIKit
 
+// MARK: - Collection View Methods -
 extension SportsTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

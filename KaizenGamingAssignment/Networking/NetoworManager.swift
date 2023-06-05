@@ -13,12 +13,12 @@ public typealias JSON = [String:Any]
 
 // Singleton class
 class NetworkManager {
-
+    
     // MARK: - Properties
     static let shared = NetworkManager()
-
+    
     private let endpoint = "https://618d3aa7fe09aa001744060a.mockapi.io/api/sports"
-
+    
     func fetchSportsData(completion: @escaping responseHandler) {
         AF.request(endpoint, method: .get).response { response in
             switch (response.result) {

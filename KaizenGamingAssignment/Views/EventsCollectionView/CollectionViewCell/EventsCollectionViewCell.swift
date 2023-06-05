@@ -60,9 +60,10 @@ class EventsCollectionViewCell: UICollectionViewCell {
         } else {
             favouriteButton.setImage(UIImage(named: "star-empty"), for: .normal)
         }
-
+        
     }
-
+    
+    // MARK: - Button Actions -
     @IBAction func favouriteButtonPressed(_ sender: Any) {
         delegate?.favouriteButtonPressed(event: self.event)
     }

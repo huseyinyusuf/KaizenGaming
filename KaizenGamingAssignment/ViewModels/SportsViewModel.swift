@@ -48,7 +48,7 @@ final class SportsViewModel {
             return false
         }
     }
-        
+    
     func removeSectionFromHidenSections(section: Int) {
         hidenSections.remove(section)
     }

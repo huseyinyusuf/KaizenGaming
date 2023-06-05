@@ -30,7 +30,7 @@ class SportsTableViewCell: UITableViewCell {
     static var reuseIdentifier: String {
         return "sportCellIdentifier"
     }
-
+    
     // MARK: - Overrides -
     override func awakeFromNib() {
         super.awakeFromNib()
