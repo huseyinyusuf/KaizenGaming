@@ -111,5 +111,6 @@ class HeaderUIView: UIView {
     // MARK: - Outlet Actions -
     @IBAction func extendCollapseAction(_ sender: Any) {
         delegate?.didClickExtendCollapseButton(section: section)
+        self.isSectionHidden?.toggle()
     }
 }
