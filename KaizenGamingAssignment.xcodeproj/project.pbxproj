@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D27881F2A2E0D5B00E49143 /* SportModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D27881E2A2E0D5B00E49143 /* SportModelTest.swift */; };
+		1D2788212A2E0D7E00E49143 /* EventModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2788202A2E0D7E00E49143 /* EventModelTest.swift */; };
+		1D2788232A2E0DA800E49143 /* SportsViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2788222A2E0DA800E49143 /* SportsViewModelTest.swift */; };
+		1D2788242A2E0FC700E49143 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6FFC752A2CCF4C000E2D43 /* Event.swift */; };
+		1D2788252A2E0FCB00E49143 /* Sport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6FFC732A2CCE32000E2D43 /* Sport.swift */; };
+		1D2788262A2E1A3B00E49143 /* SportsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D58FF7E2A2B7DD40020E96A /* SportsViewModel.swift */; };
+		1D2788272A2E1A6400E49143 /* NetoworManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6FFC712A2C9B26000E2D43 /* NetoworManager.swift */; };
 		1D41BE122A2A692800FF8CCC /* SportsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D41BE102A2A692800FF8CCC /* SportsTableViewCell.swift */; };
 		1D41BE132A2A692800FF8CCC /* SportsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D41BE112A2A692800FF8CCC /* SportsTableViewCell.xib */; };
 		1D46AB5C2A28AE0C007C2710 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D46AB5B2A28AE0C007C2710 /* AppDelegate.swift */; };
@@ -50,6 +57,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D27881E2A2E0D5B00E49143 /* SportModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportModelTest.swift; sourceTree = "<group>"; };
+		1D2788202A2E0D7E00E49143 /* EventModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModelTest.swift; sourceTree = "<group>"; };
+		1D2788222A2E0DA800E49143 /* SportsViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsViewModelTest.swift; sourceTree = "<group>"; };
 		1D41BE102A2A692800FF8CCC /* SportsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsTableViewCell.swift; sourceTree = "<group>"; };
 		1D41BE112A2A692800FF8CCC /* SportsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SportsTableViewCell.xib; sourceTree = "<group>"; };
 		1D46AB582A28AE0C007C2710 /* KaizenGamingAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KaizenGamingAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,6 +173,9 @@
 		1D46AB712A28AE13007C2710 /* KaizenGamingAssignmentTests */ = {
 			isa = PBXGroup;
 			children = (
+				1D27881E2A2E0D5B00E49143 /* SportModelTest.swift */,
+				1D2788202A2E0D7E00E49143 /* EventModelTest.swift */,
+				1D2788222A2E0DA800E49143 /* SportsViewModelTest.swift */,
 			);
 			path = KaizenGamingAssignmentTests;
 			sourceTree = "<group>";
@@ -388,6 +401,7 @@
 					};
 					1D46AB6D2A28AE13007C2710 = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 						TestTargetID = 1D46AB572A28AE0C007C2710;
 					};
 					1D46AB772A28AE13007C2710 = {
@@ -573,6 +587,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D2788252A2E0FCB00E49143 /* Sport.swift in Sources */,
+				1D2788262A2E1A3B00E49143 /* SportsViewModel.swift in Sources */,
+				1D2788242A2E0FC700E49143 /* Event.swift in Sources */,
+				1D2788232A2E0DA800E49143 /* SportsViewModelTest.swift in Sources */,
+				1D2788212A2E0D7E00E49143 /* EventModelTest.swift in Sources */,
+				1D2788272A2E1A6400E49143 /* NetoworManager.swift in Sources */,
+				1D27881F2A2E0D5B00E49143 /* SportModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -810,15 +831,22 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NW97XP3FY6;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kaizen.KaizenGamingAssignmentTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KaizenGamingAssignment.app/KaizenGamingAssignment";
@@ -831,11 +859,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NW97XP3FY6;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kaizen.KaizenGamingAssignmentTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

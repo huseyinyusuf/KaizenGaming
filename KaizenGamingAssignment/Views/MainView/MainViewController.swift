@@ -157,7 +157,7 @@ extension MainViewController: ViewModelUpdateDelegate {
     func updateViewModelEvent(event: Event?) {
         guard let vm = vm,
               let event = event else { return }
-        vm.updateSportsWithEvent(event: event)
+        vm.updateEventFavourite(event: event)
         sportsTableView.reloadData()
     }
     

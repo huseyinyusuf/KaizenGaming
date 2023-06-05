@@ -68,7 +68,7 @@ final class SportsViewModel {
         return indexPaths
     }
     
-    func updateSportsWithEvent(event: Event?) {
+    func updateEventFavourite(event: Event?) {
         for (sportIndex, sport) in sports.enumerated(){
             if (event?.sportId == sport.sportId) {
                 for (eventIndex, sportEvent) in sport.events.enumerated() {

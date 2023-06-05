@@ -19,10 +19,10 @@ struct Event {
         
         let eventName = json["d"] as? String ?? ""
         let trimmedEventName = eventName.trimmingCharacters(in: .whitespacesAndNewlines)
-        let eventNameArray = trimmedEventName.components(separatedBy: "-")
+        let eventNameArray = trimmedEventName.components(separatedBy: " - ")
         self.competitor1 = eventNameArray[0]
         self.competitor2 = eventNameArray[1]
-        self.startTime = json["tt"] as? Int64 ?? 0
+        self.startTime = Int64(json["tt"] as? Int ?? 0)
         self.isFavourite = false
     }
 }
