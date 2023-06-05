@@ -21,6 +21,7 @@ class EventsCollectionViewCell: UICollectionViewCell {
     // MARK: - Properties -
     weak var delegate: CollectionCellelegate?
     private(set) var event: Event?
+    private var timer: Timer?
     static var nib:UINib {
         let nibName = String(describing: self)
         return UINib(nibName: nibName, bundle: nil)
@@ -28,6 +29,13 @@ class EventsCollectionViewCell: UICollectionViewCell {
     
     static var reuseIdentifier: String {
         return "eventCollectionViewCell"
+    }
+    
+    // MARK: - Overrides -
+    override func prepareForReuse() {
+        // Reset timer for reused cell
+        timer?.invalidate()
+        timer = nil
     }
     
     // MARK: - Public Methods -
@@ -46,11 +54,12 @@ class EventsCollectionViewCell: UICollectionViewCell {
         
         // CountDownText
         countDownLabel.textColor = UIColor(red: 0.40, green: 0.42, blue: 0.45, alpha: 1.00)
-        let formatter = DateFormatter()
-        formatter.dateFormat = "HH:MM:SS"
-        let dateString = formatter.string(from: Date(timeIntervalSince1970: TimeInterval(event.startTime)))
-        countDownLabel.text = dateString
+        countDownLabel.text = Countdown.shared.getCountdownStringFromTT(eventStartTime: event.startTime)
         
+        
+        self.timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] _ in
+            self?.countDownLabel.text = Countdown.shared.getCountdownStringFromTT(eventStartTime: event.startTime)
+        }
         // FavouriteButton
         favouriteButton.clipsToBounds = true
         favouriteButton.contentMode = .scaleAspectFit
